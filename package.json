@@ -1,0 +1,25 @@
+{
+    "name": "cue-vscode",
+    "displayName": "cue-vscode",
+    "description": "language support for cuelang",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.38.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "cue",
+            "aliases": ["cue", "cue"],
+            "extensions": ["cue"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "cue",
+            "scopeName": "source.cue",
+            "path": "./syntaxes/cue.tmLanguage.json"
+        }]
+    }
+}
